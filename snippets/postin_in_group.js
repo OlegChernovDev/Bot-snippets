@@ -2,7 +2,7 @@ const { Telegraf } = require('telegraf');
 
 const bot = new Telegraf(TOKEN)
 
-const goupId = '-1000000000000';
+const goupId = '-1000000000000'; //ID группы в которую публикуем 
 
 bot.command('post', (ctx) => {
     let command = ctx.update.message.text.split(' ') // ['/post parm1  parm2']
